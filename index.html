@@ -7,57 +7,179 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1> Hello! </h1>
-    <p> Student </p>
-  </header>
 
-<nav>
-    <ul>
-    <li><a href="#about">About Me</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#" class="nav-logo">Emily Hatten</a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
-</nav>
+  </nav>
+  
+  <!-- Welcome Section -->
+  <section class="welcome-section">
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div id="projectList"></div>
+  <div class="welcome-text">
+    <h1 id="greeting">Hello, I'm Emily!</h1>
+    <p> I will have a Bachelors Degree in Physics, Applied Math, and IT.</p>
+  </div>
   </section>
 
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
 
-            
-        </ul>
+  <!-- About Section -->
 
+  <button type="button" class="collapsible">
+    <section class="about-section">
+      <h2>About Me</h2>
+      <p>I’m a student developer focused on building clean, accessible web applications using HTML, CSS, JavaScript, PHP, and MySQL.</p>
+    </section>
+  </button>
     
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
-        </form>
+
+
+
+
+  <!-- Projects Section -->
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="research-list">
+
+      <!-- Project 1 -->
+      <article class="research-item">
+        <figure class="research-media">
+          <img src="cool.jpg" alt="Screenshot of Project 1">
+          <figcaption>
+            <strong>Analyzing Catacysmic Variable Star Systems</strong><br>
+            Role: Researcher/Developer · 2024
+          </figcaption>
+        </figure>
+
+        <div class="research-content">
+          <h3>AstroPhysics Research</h3>
+          <p>
+              Analyzed light curves of cataclysmic variable star systems using Python in Jupyter notebooks.
+              Employed SkyNet for neural network classification and AfterGlow for data visualization.
+              Results contributed to a published research paper and poster presentation.
+          </p>
+
+          <ul class="research-meta">
+            <li><span class="badge">Python</span></li>
+            <li><span class="badge">Juypter</span></li>
+            <li><span class="badge">SkyNet</span></li>
+            <li><span class="badge">AfterGlow</span></li>
+          </ul>
+
+          <div class="resource-links">
+            <a class="btn-link" href="https://github.com/your-username/art-gallery" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn-link" href="https://your-demo-url.example.com" target="_blank" rel="noopener">Poster</a>
+            <a class="btn-link" href="documents/art-gallery-report.pdf" target="_blank" rel="noopener">Paper</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="research-item">
+        <figure class="research-media">
+          <img src="project3.jpg" alt="Screenshot of Project 3">
+          <figcaption>
+            <strong></strong><br>
+            Role: Full‑stack · 2024
+          </figcaption>
+        </figure>
+
+        <div class="research-content">
+          <h3>Solving Maxwell's Equations</h3>
+          <p>
+            My current research focuses on solving Maxwell’s equations in three-dimensional space to simulate the propagation of ultrashort laser pulses and their interactions with nanostructures, particularly metallic and dielectric nanowires. Using Pseudospectral Time Domain (PSTD) and Finite-Difference Time-Domain (FDTD) methods, I model nonlinear, time-resolved electromagnetic fields in nanoscale environments. My responsibilities have included setting up custom simulations, implementing boundary conditions, adjusting solver parameters, and generating meaningful visualizations. The broader goal is to better understand femtosecond-scale light-matter interactions—knowledge that has implications for optical computing, nano-fabrication, and photonic device engineering. This work has strengthened both my coding abilities and my physical intuition for complex electromagnetic systems.
+            Using PSTD to solve Maxwell's equations in a 3D computational space, including absorbing boundary conditions such as CPML and injecting a light source with total field scatter field, developed in Fortran and visualized with Igor Pro 8.
+            
+          </p>
+          <ul class="research-meta">
+            <li><span class="badge">JavaScript</span></li>
+            <li><span class="badge">PHP</span></li>
+            <li><span class="badge">Charts</span></li>
+          </ul>
+          <div class="resource-links">
+            <a class="btn-link" href="#" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn-link" href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-list">
+
+    <!-- Project 1 -->
+    <article class="project-item">
+      <h3>Project Title 1</h3>
+      <p>Brief description of Project 1.</p>
+      <a href="#">View Project</a>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-item">
+      <h3>Project Title 2</h3>
+
+      <p>Brief description of Project 2.</p>
+      <a href="#">View Project</a>
+    </article>
+
+  </div>
+
+</section>
+
+
+  <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+
+    <div class="contact-cards">
+        <!-- Email -->
+        <a class="contact-card" href="mailto:emily@example.com" aria-label="Send me an email">
+        <div class="contact-icon"><img src = ""></div>
+        <h3>Email</h3>
+        </a>
+
+        <!-- Phone -->
+        <a class="contact-card" href="tel:+1234567890" aria-label="Call my phone number">
+        <div class="contact-icon"><img src = ""></div>
+        <h3>Phone</h3>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="contact-card" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener" aria-label="Visit my LinkedIn profile">
+        <div class="contact-icon"><img src = ""></div>
+        <h3>LinkedIn</h3>
+        </a>
+
+        <!-- GitHub -->
+        <a class="contact-card" href="https://github.com/" target="_blank" rel="noopener" aria-label="Visit my GitHub profile">
+        <div class="contact-icon"><img src = ""></div>
+        <h3>GitHub</h3>
+        </a>
+
+    </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Emily Hatten</p>
-        <p>Follow me on <a href="" target="_blank">GitHub</a> and <a href="" target="_blank">LinkedIn</a></p>
-    </footer>
-    
 
-  <script src="script.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Emily Hatten</p>
+  </footer>
+
+<script src="script.js"></script>
 </body>
 </html>

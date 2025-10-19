@@ -1,328 +1,310 @@
-/*------ style.css by Emily Hatten ------*/
-
-/* --- Text Styling --- */
+/* ==========================
+   Global Styles
+========================== */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
-    margin: 0;
-    padding: 0;
-    color: #333;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+
+  background: linear-gradient(to top right, #9a7db2, #73907a);
+    
 }
 
-/* --- Welcome Text Stylying --- */
-.welcome-section {
-    text-align: center;
-    margin: 50px 0 30px 0;
-    padding: 0 20px;
+.h1, .h2, .h3 {
+  border: 1px solid #486157;
+  
 }
 
-.welcome-section h1 {
-    font-size: 34px;
-    color: #4B2E83;
-    margin-bottom: 15px;
-    text-align: center;
+
+
+.p {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+    
 }
 
-.subtitle {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
+.img {
+  border: 1px solid #486157;
+
 }
 
-.description {
-    font-size: 16px;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
+.ul {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px; 
 }
 
-/* --- Footer Style --- */
-.footer {
-    text-align: center;
-    font-size: 14px;
-    color: #999;
-    padding: 20px 0;
-    margin-top: 50px;
-    border-top: 1px solid #ddd;
+.li {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
 }
 
-/* --- Card Styles --- */
-.card-container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto 40px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    padding: 0 10px;
+.a {
+  border: 1px solid #486157;
 }
 
-.hover-card {
-    background: white;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-    border-radius: 12px;
-    padding: 30px 20px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
 
-.hover-card h2 {
-    color: #4B2E83;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
+/* ==========================
+   Navigation
+========================== */
+nav {
+  border: 1px solid #486157;
+  background-color: #73907a;
 
-ul.link-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
-}
-
-.hover-card:hover ul.link-list {
-    opacity: 1;
-    max-height: 500px;
-}
-
-ul.link-list li {
-    margin: 10px 0;
-}
-
-ul.link-list a {
-    text-decoration: none;
-    color: #4B2E83;
-    font-size: 17px;
-    transition: all 0.3s ease;
-}
-
-ul.link-list a:hover {
-    color: #371a67;
-    text-decoration: underline;
-    transform: scale(1.05);
-}
-
-.logout-link {
-    color: #AA0000;
-}
-
-.logout-link:hover {
-    color: #800000;
-}
-
-/* --- Navigation Bar Styles --- */
-.navbar {
-    background-color: #ab8dbd;
-    border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-    max-width: 1200px;
-    margin: auto;
+  position: sticky;
+  width: 100%;
+  height: 60px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.4;
 }
 
 .nav-logo {
-    font-size: 22px;
-    font-weight: 600;
-    color: #4B2E83;
-    text-decoration: none;
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+ border: 1px solid #486157;
+ margin: 15px;
+ padding: 5px;
+ display: inline-flex;
 }
 
-.nav-links li {
-    margin-left: 25px;
+/* ==========================
+   Dividers
+========================== */
+div {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
 }
 
-.nav-links a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #7d6086;
-    transition: color 0.3s;
+/* ==========================
+   Sections
+========================== */
+section {
+  border: 1px solid #486157;
+  padding: 20px;
 }
 
-.nav-links a:hover {
-    color: #4B2E83;
-    text-decoration: underline;
+/* ==========================
+   Welcome Section
+========================== */
+.welcome-section {
+  border: 1px solid #486157;
+
+  height: 100vh;              
+  display: flex;              
+  
+  background-image: url("sideON.jpg"); 
+  background-position: center; 
+  background-size: cover;      
+  background-repeat: no-repeat; 
+}
+
+.welcome-text {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+#greeting {
+  border: 1px solid #486157;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ==========================
+   Collapsible Section
+========================== */
+.collapsible {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  background-color: #73907a;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+  display: flex;  
+  flex-direction: row;
+  align-items: center;
 }
 
 
-
-
-
-/* --- Page Layout Styles --- */
-.page-section {
-    text-align: center;
-    margin-top: 50px;
-    padding: 0 20px;
-}
-
-
-/* --- Table Styles --- */
-.styled-table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    font-size: 16px;
-    width: 90%;
-    border: 1px solid #ccc;
-}
-
-.styled-table thead tr {
-    background-color: #f2f2f2;
-}
-
-.styled-table th, .styled-table td {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-.styled-table tbody tr:hover {
-    background-color: #f9f9f9;
-}
-
-/* --- About Us Section --- */
+/* ==========================
+   About Section
+========================== */
 .about-section {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-    max-width: 900px;
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-.about-section h2 {
-    font-size: 28px;
-    color: #4B2E83;
-    margin-bottom: 15px;
-}
+.about-img{
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+} 
 
-.about-section p {
-    font-size: 17px;
-    color: #555;
-    line-height: 1.6;
-    margin: 0 auto;
-}
-
-
-/* --- Button Styles --- */
-.button-link {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: #4B2E83;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.button-link:hover {
-    background-color:#4B2E83;
-}
-
-.update-button {
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: #4B2E83;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-
-.update-button:hover {
-    background-color: #341B61;
-}
-
-/* --- Form Styles --- */
-input:disabled {
-    background-color: #f0f0f0;
-    color: #555;
-    cursor: not-allowed;
-}
-
-.styled-form label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: 600;
-    text-align: left;
-}
-
-.styled-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.styled-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-
-/* --- Logout Link Styles --- */
-.logout-link {
-    color: #AA0000;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.logout-link:hover {
-    color: #800000;
-    text-decoration: underline;
-}
-
-
-/* --- Projects Section Styles --- */
-#projects {
+.about-text {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
   max-width: 600px;
-  margin: auto;
+  text-align: center;
 }
-.project {
-  background: white;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+
+/* ==========================
+   Research Section
+========================== */
+.research {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.research-list {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: inline-flex;  
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.research-items {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ==========================
+   Projects Section
+========================== */
+.projects {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-list {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: inline-flex;  
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.project-items {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ==========================
+   Contact Section
+========================== */
+
+.contact-section {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-cards {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: inline-flex;  
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-card {
+  border: 1px solid #486157;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+
+  background-color: #9a7db2;
+  color: white;
+  text-decoration: none;
+
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
