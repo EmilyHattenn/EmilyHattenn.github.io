@@ -21,7 +21,7 @@ https://emilyhattenn.github.io/
 ## Sections
 
 ### Welcome
-A hero section with my photo, animated multilingual greeting, and a hover-reveal introduction about my academic background and career goals.
+A section with my photo, animated multilingual greeting, and a hover-reveal introduction about my academic background and career goals.
 
 ### About Me
 A collapsible section with my background, research interests, and personal photos. Includes details about my interdisciplinary approach to physics and computing.
