@@ -8,7 +8,7 @@ I built this portfolio to showcase my research experience in computational physi
 
 ## Live Demo
 
-[View the live site](#) *[add your deployed URL here](https://emilyhattenn.github.io/)*
+[View the live site](#) *(https://emilyhattenn.github.io/)*
 
 ## Features
 
@@ -65,19 +65,18 @@ Links to reach me via email, phone, LinkedIn, and GitHub with SVG icons.
 ## File Structure
 
 ```
-├── index.html          # Main HTML structure
-├── style.css           # All styling
-├── script.js           # Interactive features 
-├── images/
-│   ├── sideON.jpg      # Hero/welcome image
-│   ├── angled.jpg      # About section photo
-│   ├── cool.jpg        # Research/personal photo
-│   ├── 
-│   ├── 
-│   ├── 
-│   ├── 
-│   ├──                 # 
-│   └── gulleyimg.png   # Maxwell's equations research image
+├── src/ 
+│   ├── images/          # Image assets
+│   |    ├── sideON.jpg      
+│   |    ├── angled.jpg      
+│   |    ├── 
+│   |    ├──     
+│   |    ├──  
+│   |    └── profile.jpg
+│   ├── index.html       # Main HTML file
+|   ├── style.css        # All styling
+|   └── script.js        # Interactive features 
+├── LICENSE
 └── README.md
 ```
 
