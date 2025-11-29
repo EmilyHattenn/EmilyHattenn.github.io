@@ -8,7 +8,7 @@ I built this portfolio to showcase my research experience in computational physi
 
 ## Live Demo
 
-[View the live site](#) *(https://emilyhattenn.github.io/)*
+https://emilyhattenn.github.io/
 
 ## Features
 
