@@ -65,17 +65,13 @@ Links to reach me via email, phone, LinkedIn, and GitHub with SVG icons.
 ## File Structure
 
 ```
-├── src/ 
-│   ├── images/          # Image assets
-│   |    ├── sideON.jpg      
-│   |    ├── angled.jpg      
-│   |    ├── 
-│   |    ├──     
-│   |    ├──  
-│   |    └── profile.jpg
-│   ├── index.html       # Main HTML file
-|   ├── style.css        # All styling
-|   └── script.js        # Interactive features 
+├── images/
+│   ├── sideON.jpg
+│   ├── angled.jpg
+│   └── ...
+├── index.html
+├── style.css
+├── script.js
 ├── LICENSE
 └── README.md
 ```
